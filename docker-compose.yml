@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+
+  detector.min:
+    container_name: detector.min
+    build:
+      context: src/
+    environment:
+      RASPBERRY_KEY: ${RASPBERRY_KEY}
